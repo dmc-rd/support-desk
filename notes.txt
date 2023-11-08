@@ -10,3 +10,11 @@ install nodemon
 npm install -D nodemon
 in the paclage.json add the following script  
 "server": "nodemon backend/server.js"
+
+Now you can start coding your backend
+
+Adding express-async-handler for handling async calls.
+npm install -s-save express-async-handler
+
+Adding jsonwebtoken to create a token for future authentication
+npm install jsonwebtoken
