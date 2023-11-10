@@ -18,3 +18,21 @@ npm install -s-save express-async-handler
 
 Adding jsonwebtoken to create a token for future authentication
 npm install jsonwebtoken
+
+SETUP FRONTEND
+npx create-react-app frontend --template redux
+
+install concurrently so you can start two servers at the same time with one script
+npm install concurrently 
+setup scripts:
+    "server": "nodemon backend/server.js",
+    "client": "npm run start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+
+now enter frontend to install npm packages for react
+npm install react-router-dom
+npm install react-toastify 
+npm install axios
+npm install react-icons
+npm install react-modal
+
