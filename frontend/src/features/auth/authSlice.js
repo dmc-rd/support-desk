@@ -17,11 +17,6 @@ export const register = createAsyncThunk(
     try {
       return await authService.register(user);
     } catch (error) {
-      console.log(
-        'There was an error: ',
-        error.response.data.message
-      );
-
       const message =
         (error.response &&
           error.response.data &&
@@ -40,11 +35,6 @@ export const login = createAsyncThunk(
     try {
       return await authService.login(user);
     } catch (error) {
-      console.log(
-        'There was an error: ',
-        error.response.data.message
-      );
-
       const message =
         (error.response &&
           error.response.data &&
@@ -54,7 +44,6 @@ export const login = createAsyncThunk(
 
       return thunkAPI.rejectWithValue(message);
     }
-    console.log(user);
   }
 );
 
