@@ -36,3 +36,11 @@ npm install axios
 npm install react-icons
 npm install react-modal
 
+SETTING UP HEROKU
+Create an account on HEROKU
+Install Heroku cli
+brew tap heroku/brew && brew install heroku
+heroku -v - to check your version
+heroku login - to login to your account
+
+
