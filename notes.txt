@@ -1,7 +1,14 @@
+INITIAL SETUP
+Create your folder for your project (ex: MY-PROJECT)
+cd into folder and open VS Code code .
+
+
 SETUP BACKEND
 create backend folder
 add server.js to backend folder with a simple console.log statement to know if it is working
-change scripts to have "start": "node backend/server.js"
+run npm init
+set entry point as server.js
+change scripts to have "start": "node backend/server.js" in package.json
 initialize git in root git init 
 add a .gitignore file 
 add node_modules and .env to the .gitignore file
@@ -10,6 +17,8 @@ install nodemon
 npm install -D nodemon
 in the paclage.json add the following script  
 "server": "nodemon backend/server.js"
+
+npm run server
 
 Now you can start coding your backend
 
